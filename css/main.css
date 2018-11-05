@@ -7,27 +7,34 @@ html {
   box-sizing: inherit;
 }
 
-img {
+.img-flex {
   width: 100%;
 }
+
 .banner {
   position: relative;
   max-height: 500px;
+  overflow: hidden;
 }
 
 .content {
-  display: flex;
   position: absolute;
   z-index: 1000;
   max-width: 50em;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 h2 {
   font-size: 4rem;
-  color: fff;
-  background-color: rgba(0,0,0,.5)
+  font-weight: bold;
+  color: #fff;
+  background-color: rgba(0,0,0,.5);
 }
 
 p {
   font-size: 2rem;
+  color: #000;
+  font-style: italic;
 }
